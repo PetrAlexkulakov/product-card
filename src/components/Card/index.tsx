@@ -13,15 +13,29 @@ const Card = ({img = placeholder, title, text, ammount, tags, place}:
   }) => {
   return (
     <div className={styles.card + ' d-flex'}>
-      <img src={img} alt="" />
-      <div>
-        <div>{title}</div>
-        <p>{text}</p>
-        <span>{ammount}</span>
-        {tags && tags.map((t, index) =>
-          <Tags key={index} tag={t} />
-        )}
-        <span>{place}</span>
+      <img src={img} />
+      <div className={styles.cardContent}>
+        <div>
+          <h4>{title}</h4>
+          <div className={styles.cardContentText + ' d-flex justify-content-between'}>
+            <p>{text}</p>
+            <span className={styles.cardContentAmmount}>${ammount}</span>
+          </div>
+          <div className={styles.cardContentTags + ' d-flex'}>
+            {tags && tags.map((t, index) =>
+              <div className={styles.cardContentTags + ' d-flex'} key={index}>
+                <Tags tag={t} />
+                {index !== tags.length - 1 &&
+                  <span className={styles.tagsDot}>•</span>
+                }
+              </div>
+            )}
+          </div>
+        </div>
+        <div className='d-flex'>
+          <div className={styles.locationIcon} />
+          <span className='ps-2'>{place}</span>
+        </div>
       </div>
     </div>
   )

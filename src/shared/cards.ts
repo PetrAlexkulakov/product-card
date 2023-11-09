@@ -16,8 +16,9 @@ export const cards = [
     {
         title: 'Fruits and vegetables are packed with essential vitamins, minerals, and nutrients',
         text: 'Fruits and vegetables',
-        ammount: '3.90',
+        ammount: '9999',
         tags: ['Healthy eating', 'Vitamins', 'Minerals', 'Nutrients', 'Balanced diet', 'Health benefits', 'Well-Being', 'Nutrition', 'Plant-based foods'],
-        place: 'Newport Beach, CA, USA'
+        place: 'Newport Beach, CA, USA, Newport Beach, CA, USA, Newport Beach, CA, USA, Newport Beach, CA, USA, Newport Beach, CA, USA,'
     },
 ]
+//

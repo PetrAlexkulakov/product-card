@@ -1,6 +1,5 @@
 .card {
     min-width: 720px;
-    width: 800px;
     max-width: 1440px;
     border-radius: 8px;
     background: #FFF;
@@ -8,6 +7,7 @@
     img {
         width: 40%;
         border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
         aspect-ratio: 4 / 3;
         object-fit: cover;
     }
@@ -40,12 +40,6 @@
     hyphens: none;
 }
 
-.locationIcon{
-    width: 24px;
-    height: 24px;
-    background-image: url('../../assets/location-fill.svg');
-}
-
 .cardContentTags {
     display: flex;
     align-items: flex-start;
@@ -53,10 +47,24 @@
     gap: 8px 13px;
     flex-wrap: wrap;
 }
+
 .tagsDot {
     color: #BFC5CE;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+}
+
+.locationIcon{
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/location-fill.svg');
+}
+
+.locationText {
+    max-width: 370px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

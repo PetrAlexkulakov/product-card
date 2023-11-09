@@ -33,8 +33,8 @@ const Card = ({img = placeholder, title, text, ammount, tags, place}:
           </div>
         </div>
         <div className='d-flex'>
-          <div className={styles.locationIcon} />
-          <span className='ps-2'>{place}</span>
+          <div className={styles.locationIcon + ' me-2'} />
+          <span className={styles.locationText}>{place}</span>
         </div>
       </div>
     </div>

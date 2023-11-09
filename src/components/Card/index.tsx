@@ -19,7 +19,7 @@ const Card = ({img = placeholder, title, text, ammount, tags, place}:
           <h4>{title}</h4>
           <div className={styles.cardContentText + ' d-flex justify-content-between'}>
             <p>{text}</p>
-            <span className={styles.cardContentAmmount}>${ammount}</span>
+            <span className={styles.cardContentAmmount}>$ {ammount}</span>
           </div>
           <div className={styles.cardContentTags + ' d-flex'}>
             {tags && tags.map((t, index) =>

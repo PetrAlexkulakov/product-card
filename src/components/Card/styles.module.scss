@@ -16,6 +16,7 @@
 .cardContent {
     padding:  2% 2.6% 2.2%;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -38,6 +39,7 @@
 .cardContentAmmount {
     color: #C1122A;
     hyphens: none;
+    white-space: nowrap;
 }
 
 .cardContentTags {
